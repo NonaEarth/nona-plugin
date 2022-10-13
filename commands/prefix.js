@@ -58,7 +58,7 @@ let onCommand = function() {
                     delete prefixInfo[`${_ori.player.xuid}`];
                     fs.writeFileSync(path.resolve(__dirname, '../data/prefix.json'), JSON.stringify(prefixInfo, null, 2));
 
-                    return out.success(`[Nona Prefix] 리셋 완료!`);
+                    return out.success(`[Nona Prefix] Successfully reset the prefix!`);
                     break;
 
                 // Commands with additional parameters.
@@ -91,11 +91,11 @@ let onCommand = function() {
                     fs.writeFileSync(path.resolve(__dirname, '../data/prefix.json'), JSON.stringify(prefixInfo, null, 2));
 
                     // Output the message.
-                    return out.success(`[Nona Prefix] 설정 완료!`);
+                    return out.success(`[Nona Prefix] All done!`);
                     break;
 
                 default:
-                    return out.success(`테스트중이라 없어용!`);
+                    return out.success(`Error!`);
                     break;
             }
         });
