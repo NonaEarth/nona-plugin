@@ -1,0 +1,9 @@
+{
+    "name": "nona",
+    "version": "1.0.0",
+    "description": "This is a nona plugin.",
+    "main" : "index.js",
+    "scripts" : { "test": "exit" },
+    "author" : "nona",
+    "license" : "LGPL-3.0"
+}
